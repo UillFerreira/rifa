@@ -1,0 +1,72 @@
+.main {
+    letter-spacing: .0178571429em;
+    line-height: 1.35rem;
+    /*font-size: 1.800rem;*/
+    font-size: 1.45rem;
+    justify-content: center;
+    display: grid;
+}
+.container {
+    padding: 10px;
+    max-width: 500px;
+    display: inline-block;
+}
+.conteudo { 
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 37%);
+    padding: 15px;
+}
+.item {
+    width: 100%;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 37%);    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+.header {
+    display: flex;
+    white-space: nowrap;
+}
+.form{
+    background:#0c0c0c17;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 37%);
+}
+label,
+textarea {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+textarea {
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+label {
+    display: block;
+    letter-spacing: .0178571429em;
+    font-size: 1.4rem;
+}
+button {
+    display:block;
+    font-size: 1.4rem;
+    background:#799afdc2;
+    border-radius: 7px;
+}
+.pagebreak {
+    border-style: dotted;    
+}
+@media print {
+    .main {
+        zoom: 67%;
+    }
+    .form {
+        display:none;
+    }
+    .pagebreak { 
+        page-break-before: always; 
+        border-style: none;
+    } /* page-break-after works, as well */
+}
